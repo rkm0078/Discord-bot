@@ -57,7 +57,7 @@ def main() -> None:
     client.run(TOKEN)
 
 keep_alive()
-client.run(os.getenv('TOKEN'))
+client.run(os.getenv('DISCORD_TOKEN'))
 
 if __name__ == '__main__':
     main()
