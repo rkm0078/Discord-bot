@@ -3,6 +3,7 @@ import os
 from dotenv import load_dotenv
 from discord import Intents, Client, Message
 from response import get_response
+from keep_alive import keep_alive
 
 # Step 0: Load our token from somewhere safe
 load_dotenv()
