@@ -56,5 +56,8 @@ async def on_message(message: Message) -> None:
 def main() -> None:
     client.run(TOKEN)
 
+keep_alive()
+client.run(os.getenv('TOKEN'))
+
 if __name__ == '__main__':
     main()
