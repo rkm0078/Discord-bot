@@ -55,7 +55,7 @@ async def on_message(message: Message) -> None:
 @client.event
 async def on_message(message):
     if message.content == '!privacy':
-        await message.channel.send('You can view our privacy policy here: [Privacy Policy URL]')
+        await message.channel.send('You can view our privacy policy here: [https://github.com/rkm0078/Discord-bot/blob/main/privacy_policy.md]')
 
 
 # Step 5: Main entry point
