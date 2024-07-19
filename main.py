@@ -52,6 +52,12 @@ async def on_message(message: Message) -> None:
     print(f'[{channel}] {username}: "{user_message}"')
     await send_message(message, user_message)
 
+@client.event
+async def on_message(message):
+    if message.content == '!privacy':
+        await message.channel.send('You can view our privacy policy here: [Privacy Policy URL]')
+
+
 # Step 5: Main entry point
 def main() -> None:
     client.run(TOKEN)
